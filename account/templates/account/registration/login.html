@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Log in{% endblock %}
+{% block content %}
+    <figure id="book">
+        <img src="{% static "images/Emojione_BW_1F4D2.svg.png" %}" alt="image" width="522" height="522"/>
+    </figure>
+    <div class="login-form">
+        <form action="{% url 'login' %}" method="post" id="login">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next }}"/>
+            <p><input type="submit" value="Start"></p>
+        </form>
+    </div>
+    <a href="{% url "register" %}" id="registration">Don't have an account?</a>
+{% endblock %}

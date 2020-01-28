@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Note{% endblock %}
+
+{% block content %}
+    <div id="write_note">
+    <a href="{% url 'board' %}" class="arrow"><img src="{% static "images/SeekPng.com_white-down-arrow-png_9148298.png" %}" alt="left arrow" width="16" height="23"/></a>
+        <form method="POST" class="post_form" id="write_note">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default"><img src="{% static "images/icon-good-1.png" %}" alt="yes" width="40" height="40"/></button>
+        </form>
+    </div>
+{% endblock %}

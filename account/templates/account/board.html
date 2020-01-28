@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Board{% endblock %}
+
+{% block content %}
+    <div id="top line"></div>
+    <a href="{% url 'note_new' %}" class="top_menu"><img src="{% static "images/add-1-1-1024x1024.png" %}" alt="plus" width="30" height="30"/></a>
+    <div id="all the notes">
+        {% for note in notes %}
+                <div class='i{{ note.pk }}'>
+                    <p id="date"><a href="{% url 'note_detail' pk=note.pk %}"> {{ note.created_date }}</a></p>
+                    <p id="text">{{ note.text|linebreaksbr }}</p>
+                </div>
+        {% endfor %}
+    </div>
+{% endblock %}

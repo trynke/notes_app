@@ -1,0 +1,401 @@
+body {
+    background: #282828;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:url('fonts/roboto.ttf');
+}
+
+div[class = "login-form"] {
+    position: absolute;
+    width: 638px;
+    height: 486px;
+    left: 110px;
+    top: 113px;
+    background: #171717;
+    border-radius: 58px;
+}
+
+form {
+    overflow:auto;
+}
+
+form p {
+    width:100%;
+    overflow:auto;
+}
+
+label {
+    position: absolute;
+    font-family: Roboto, serif;
+    float: left;
+    color:#FFFFFF;
+    font-size: 24px;
+    left: 50px;
+    margin-top: 20px;
+}
+
+div[id='write_note'] label {
+    position: absolute;
+    font-family: Roboto, serif;
+    float: left;
+    color:#FFFFFF;
+    font-size: 0;
+}
+
+input, textarea[id='login'] {
+    clear: both;
+    float: left;
+    margin-left: 50px;
+    margin-top: 80px;
+    background: #aaaaaa;
+    border:0;
+    padding:10px 20px;
+    font-size:36px;
+}
+
+div[id='write_note'] {
+    background: #BCBCBC;
+    position: absolute;
+    width: 658px;
+    height: 494px;
+    left: 25%;
+    top: 11%;
+}
+
+div[id='write_note'] textarea {
+    position: absolute;
+    font-family: Roboto, serif;
+    background: #F1F0F0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 15px;
+}
+
+div[id='write_note'] button {
+    background: #BCBCBC;
+    position: absolute;
+    border: 0;
+    float: top;
+    top: 1%;
+    left: 92%;
+}
+
+a[class='arrow'] {
+    top: 15px;
+    left: 13px;
+    position: absolute;
+}
+
+input[type=submit], a.button[id='login'] {
+    position: absolute;
+    font-family: Roboto, serif;
+    background:#000000;
+    color: #FFFFFF;
+    padding:9px 38px;
+    font-size:36px;
+    text-decoration-line: underline;
+    border-radius: 58px;
+    left: 370px;
+    top: 300px;
+}
+
+.errorlist{
+    position: fixed;
+    color:#FFFFFF;
+    float:left;
+    left: 26px;
+    top: 52px;
+    padding-left:10px;
+    font-family: Roboto, serif;
+    font-size:18px;
+}
+
+figure[id='book'] {
+    position: absolute;
+    width: 522px;
+    height: 522px;
+    top: 76px;
+    left: 835px;
+}
+
+div[id='header'] {
+    position: relative;
+    font-family: Roboto, serif;
+    color: #FFFFFF;
+    font-size:28px;
+    z-index: 1;
+}
+
+#header a {
+    position: relative;
+    font-size: 18px;
+    color: #656565;
+    z-index: 1;
+}
+
+h1[id='log out'] {
+    position: fixed;
+    font-family: Roboto, serif;
+    color: #ffffff;
+    top: 32%;
+    left: 43%;
+    font-size: 36px;
+}
+
+p[id='log out'] {
+    position: fixed;
+    font-family: Roboto, serif;
+    color: #656565;
+    top: 43%;
+    left: 34%;
+    font-size: 18px;
+}
+
+div[id='top line'] {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    top: 0;
+    background: #171717;
+}
+
+a[id='registration'] {
+    position: absolute;
+    width: 258px;
+    height: 37px;
+    left: 170px;
+    top: 514px;
+
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+
+div[id='registration'] {
+    position: absolute;
+    width: 586px;
+    height: 500px;
+    left: 448px;
+    top: 128px;
+    background: #171717;
+    border-radius: 58px;
+}
+
+div[id='registration'] input, textarea {
+    clear: both;
+    float: left;
+    margin-left: 50px;
+    margin-top: 55px;
+    background: #aaaaaa;
+    border:0;
+    padding:2px 100px;
+    font-size:18px;
+    font-family: Roboto, serif;
+}
+
+div[id='registration'] label {
+    position: absolute;
+    font-family: Roboto, serif;
+    float: left;
+    color:#FFFFFF;
+    font-size: 18px;
+    left: 50px;
+    margin-top: 13px;
+}
+
+div[id='registration'] input[type=submit], a.button {
+    position: absolute;
+    font-family: Roboto, serif;
+    background:#000000;
+    color: #FFFFFF;
+    padding:9px 38px;
+    font-size: 30px;
+    text-decoration-line: underline;
+    border-radius: 58px;
+    left: 348px;
+    top: 363px;
+}
+
+.helptext {
+    margin:0 0 0 0;
+    color:#ffffff;
+    clear:both;
+    float:right;
+    font-size: 0;
+}
+
+a[id='go_back'] {
+    position: absolute;
+    width: 258px;
+    height: 37px;
+    left: 500px;
+    top: 563px;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+h1[id='reg_done'] {
+    position: fixed;
+    font-family: Roboto, serif;
+    color: #ffffff;
+    top: 32%;
+    left: 43%;
+    font-size: 36px;
+}
+
+p[id='reg_done'] {
+    position: fixed;
+    font-family: Roboto, serif;
+    color: #656565;
+    top: 43%;
+    left: 34%;
+    font-size: 18px;
+}
+
+p[id='text'] {
+    font-family: Roboto, serif;
+    font-size: 18px;
+}
+
+p[id='date'] {
+    font-family: Roboto, serif;
+    font-style: italic;
+    font-size: 15px;
+}
+
+div[id='all\ the\ notes']{
+    position: relative;
+    padding: 50px 50px;
+}
+
+div[class$='1']{
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #FAD9D9;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+div[class$='2']{
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #C2F0FF;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+div[class$='3'] {
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #B7FFDC;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+div[class$='4'] {
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #F9FCD3;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+div[class$='5'] {
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #CAC1FF;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+div[class$='6'] {
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #F1F0F0;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+div[class$='7']{
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #FAD9D9;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+div[class$='8']{
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #C2F0FF;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+div[class$='9'] {
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #B7FFDC;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+div[class$='0'] {
+    position: relative;
+    width: 270px;
+    height: 200px;
+    background: #F1F0F0;
+    padding: 5px 10px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+a[class='top_menu']{
+    position: absolute;
+    left: 97%;
+    top: 1.5%;
+    z-index: 2;
+}
